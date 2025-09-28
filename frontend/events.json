@@ -1,0 +1,68 @@
+[
+    {
+        "id": "tactics-convoy-2025-09-24",
+        "title": "Tactics Training · Convoy Formations",
+        "date": "2025-09-31",
+        "start": "20:00",
+        "end": "21:00",
+        "tz": "UTC",
+        "location": "Discord Voice",
+        "where": "Discord Voice",
+        "description": "Warm-up, comms check, formation discipline, and contact drills.",
+        "tags": [
+            "Training",
+            "Beginner"
+        ],
+        "type": "training",
+        "link": "#"
+    },
+    {
+        "id": "scramble-ops-2025-09-26",
+        "title": "Scramble Night · Interdiction Drills",
+        "date": "2025-09-30",
+        "start": "22:00",
+        "end": "23:30",
+        "tz": "UTC",
+        "location": "Orison",
+        "where": "Orison",
+        "description": "Rapid deploy, target ID, hard disengage practice, objective rotation.",
+        "tags": [
+            "Ops",
+            "PVE"
+        ],
+        "type": "ops",
+        "link": "#"
+    },
+    {
+        "id": "q4-brief-2025-09-30",
+        "title": "Command Brief · Q4 Tasking",
+        "date": "2025-09-30",
+        "start": "19:00",
+        "end": "19:45",
+        "tz": "UTC",
+        "location": "Discord Stage",
+        "where": "Discord Stage",
+        "description": "Unit goals, contracts, fleet comps, and staffing. Q&A at the end.",
+        "tags": [
+            "Briefing"
+        ],
+        "type": "briefing",
+        "link": "#"
+    },
+    {
+        "id": "q4-brief-2025-09-29",
+        "title": "Command Brief · Q4 Tasking",
+        "date": "2025-09-29",
+        "start": "20:00",
+        "end": "21:00",
+        "tz": "UTC",
+        "location": "Discord Stage",
+        "where": "Discord Stage",
+        "description": "Unit goals, contracts, fleet comps, and staffing. Q&A at the end.",
+        "tags": [
+            "Briefing"
+        ],
+        "type": "briefing",
+        "link": "#"
+    }
+]

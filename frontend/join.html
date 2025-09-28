@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Join · Phoenix Command</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../join.css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body id="top">
+    <!-- Fixed background for this page -->
+    <div id="join-bg" aria-hidden="true"></div>
+
+    <!-- Nav (same as index) -->
+    <header class="nav">
+        <a class="nav__brand" href="index.html" aria-label="Phoenix Command Home">Phoenix</a>
+
+        <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav__menu" role="navigation" aria-label="Primary">
+            <a href="index.html#announcements">ANNOUNCEMENTS</a>
+            <a href="index.html#events">CALENDAR</a>
+            <a href="index.html#newsletter">NEWSLETTER</a>
+            <a class="nav__cta" href="join.html">JOIN</a>
+        </nav>
+    </header>
+
+    <!-- Discord-first hero/card -->
+    <main class="join-hero">
+        <section class="join-card" aria-labelledby="join-title">
+            <header class="join-head">
+                <span class="badge badge--outline">ENLISTMENT</span>
+                <h1 id="join-title" class="join-title">Join Phoenix Command</h1>
+                <p class="join-sub">We coordinate everything in <strong>Discord</strong>—ops, training, alerts, and
+                    briefings.</p>
+            </header>
+
+            <!-- Step 1: Discord -->
+            <div class="join-steps">
+                <section class="step">
+                    <h2 class="step-title"><span class="step-tag">Step 1</span> Join our Discord</h2>
+                    <p class="step-sub">This is where comms, roles, and scheduling happen.</p>
+
+                    <a class="btn btn--discord" href="https://discord.gg/wcdmz2GRBd" target="_blank"
+                        rel="noopener noreferrer" aria-label="Join our Discord">
+                        <!-- Discord logo (inline SVG) -->
+                        <svg viewBox="0 0 245 240" width="20" height="20" aria-hidden="true">
+                            <path fill="currentColor"
+                                d="M104.4 104.9c-5.7 0-10.2 4.9-10.2 11s4.6 11 10.2 11c5.7 0 10.2-4.9 10.2-11s-4.5-11-10.2-11zm36.2 0c-5.7 0-10.2 4.9-10.2 11s4.6 11 10.2 11c5.7 0 10.2-4.9 10.2-11s-4.5-11-10.2-11zM189.5 20h-134C24.4 20 0 44.4 0 74.6V165c0 30.2 24.4 54.6 55.5 54.6h113.3l-5.3-18.3 12.8 11.9 12.1 11.1 21.5 19.7V74.6C210 44.4 185.6 20 155.5 20h34z" />
+                        </svg>
+                        Join our Discord
+                    </a>
+
+                    <!-- Optional: live server widget (enable in Discord > Server Settings > Widget) -->
+                    <div class="discord-widget">
+                        <iframe title="Discord server widget"
+                            src="https://discord.com/widget?id=931844944585441280&theme=dark" width="350" height="220"
+                            allowtransparency="true" frameborder="0"
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                        </iframe>
+                    </div>
+
+                    <ul class="discord-highlights">
+                        <li>Role assignment & pings for ops</li>
+                        <li>Voice comms & training lobbies</li>
+                        <li>Live event signups & briefings</li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

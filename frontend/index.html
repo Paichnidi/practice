@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phoenix Command</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body id="top">
+  <!-- Fixed background layers -->
+  <div id="site-bg" aria-hidden="true"></div> <!-- Lagoon (base) -->
+  <div id="site-bg2" aria-hidden="true"></div> <!-- Space station (fades in) -->
+
+  <!-- Header / Nav -->
+  <header class="nav">
+    <a class="nav__brand" href="#top" aria-label="Phoenix Command Home">Phoenix</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle navigation" />
+    <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav__menu" role="navigation" aria-label="Primary">
+      <a href="about">ABOUT</a>
+      <a href="#events">CALENDAR</a>
+      <a href="join.html">JOIN</a>
+      <a class="nav__cta" href="#hire">HIRE</a>
+    </nav>
+  </header>
+
+  <!-- Full-screen hero -->
+  <section id="hero" class="hero-landing" aria-label="Phoenix Command">
+    <!-- Scrim to ensure text contrast -->
+    <div class="hero-landing__scrim" aria-hidden="true"></div>
+
+    <div class="hero-landing__inner container">
+      <span class="badge badge--outline">PRIVATE MILITIA · ON CALL</span>
+      <h1 class="hero-landing__title">SECURE. ESCORT. EXTRACT.</h1>
+      <p class="hero-landing__sub">Rapid-response security, close protection, and asset recovery across the ’verse.</p>
+
+      <div class="hero-landing__actions">
+        <a href="#hire" class="btn btn--primary btn--xl">HIRE US NOW</a>
+        <a href="#events" class="btn btn--ghost btn--xl">View Calendar</a>
+      </div>
+    </div>
+
+    <!-- Subtle scroll cue that flows into announcements -->
+    <a class="hero-landing__scroll" href="#announcements" aria-label="Scroll to announcements">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </a>
+  </section>
+
+  <main class="page container">
+    <!-- Announcements -->
+    <!-- Announcements -->
+    <section id="announcements" class="announcements" aria-labelledby="announce-title-1">
+      <figure class="announce-media">
+        <img
+          src="https://media.starcitizen.tools/thumb/4/48/SC-3.24_20241206_133812_Terrapin-Medic-over-Hurston.png/800px-SC-3.24_20241206_133812_Terrapin-Medic-over-Hurston.png.webp"
+          alt="Phoenix ship scanning a debris field">
+      </figure>
+      <div class="announce-copy">
+        <span class="badge">UPDATE</span>
+        <h2 id="announce-title-1">Alpha 4.3.1</h2>
+        <p>Updated Onyx Facility Locations and Medical Gameplay</p>
+        <ul>
+          <li>Medgel resource added</li>
+          <li>Onyx Facility Expansion</li>
+          <li>Dropships Re-implemented</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- New announcement (image left) -->
+    <section class="announcements is-img-left" aria-labelledby="announce-title-2">
+      <figure class="announce-media">
+        <img
+          src="https://media.starcitizen.tools/thumb/6/6a/CitizenCon_2954_background_image_02.jpg/800px-CitizenCon_2954_background_image_02.jpg.webp"
+          alt="Gunship escort departing a station hangar">
+      </figure>
+      <div class="announce-copy">
+        <span class="badge">EVENT</span>
+        <h2 id="announce-title-2">CitizenCon</h2>
+        <p>While there won’t be a traditional in-person CitizenCon in 2025, we’re thrilled to introduce CitizenCon
+          Direct—a special
+          digital showcase that brings the excitement straight to you. This year’s format helps us keep the momentum
+          going while
+          still giving the community something truly special to look forward to.</p>
+      </div>
+    </section>
+
+
+
+
+    <!-- Events (Calendar + Upcoming) -->
+    <section id="events" class="events" aria-labelledby="events-title">
+      <div class="events__header">
+        <h2 id="events-title">Upcoming Events</h2>
+        <a href="#" id="export-ics" class="btn btn--tiny btn--ghost">Add to your calendar</a>
+      </div>
+
+      <div class="events__grid">
+        <!-- Mini month calendar -->
+        <div class="cal-card" aria-label="September 2025 Calendar">
+          <div class="cal-head">
+            <div class="cal-month"><span id="cal-month-text">September</span> <span class="cal-year"
+                id="cal-year-text">2025</span></div>
+            <span class="cal-chip" id="cal-chip">Today · Sep&nbsp;24</span>
+          </div>
+
+          <div class="cal-grid" id="mini-cal">
+            <div class="cal-wd">Mon</div>
+            <div class="cal-wd">Tue</div>
+            <div class="cal-wd">Wed</div>
+            <div class="cal-wd">Thu</div>
+            <div class="cal-wd">Fri</div>
+            <div class="cal-wd">Sat</div>
+            <div class="cal-wd">Sun</div>
+
+            <!-- Keep these exact day boxes so visuals don’t shift -->
+            <div class="cal-day" role="button" tabindex="0">1</div>
+            <div class="cal-day" role="button" tabindex="0">2</div>
+            <div class="cal-day" role="button" tabindex="0">3</div>
+            <div class="cal-day" role="button" tabindex="0">4</div>
+            <div class="cal-day" role="button" tabindex="0">5</div>
+            <div class="cal-day" role="button" tabindex="0">6</div>
+            <div class="cal-day" role="button" tabindex="0">7</div>
+
+            <div class="cal-day" role="button" tabindex="0">8</div>
+            <div class="cal-day" role="button" tabindex="0">9</div>
+            <div class="cal-day" role="button" tabindex="0">10</div>
+            <div class="cal-day" role="button" tabindex="0">11</div>
+            <div class="cal-day" role="button" tabindex="0">12</div>
+            <div class="cal-day" role="button" tabindex="0">13</div>
+            <div class="cal-day" role="button" tabindex="0">14</div>
+
+            <div class="cal-day" role="button" tabindex="0">15</div>
+            <div class="cal-day" role="button" tabindex="0">16</div>
+            <div class="cal-day" role="button" tabindex="0">17</div>
+            <div class="cal-day" role="button" tabindex="0">18</div>
+            <div class="cal-day" role="button" tabindex="0">19</div>
+            <div class="cal-day" role="button" tabindex="0">20</div>
+            <div class="cal-day" role="button" tabindex="0">21</div>
+
+            <div class="cal-day" role="button" tabindex="0">22</div>
+            <div class="cal-day" role="button" tabindex="0">23</div>
+            <div class="cal-day is-today" role="button" tabindex="0">24</div>
+            <div class="cal-day" role="button" tabindex="0">25</div>
+            <div class="cal-day" role="button" tabindex="0">26</div>
+            <div class="cal-day" role="button" tabindex="0">27</div>
+            <div class="cal-day" role="button" tabindex="0">28</div>
+
+            <div class="cal-day" role="button" tabindex="0">29</div>
+            <div class="cal-day" role="button" tabindex="0">30</div>
+            <div class="cal-day is-muted" aria-hidden="true"></div>
+            <div class="cal-day is-muted" aria-hidden="true"></div>
+            <div class="cal-day is-muted" aria-hidden="true"></div>
+            <div class="cal-day is-muted" aria-hidden="true"></div>
+            <div class="cal-day is-muted" aria-hidden="true"></div>
+          </div>
+
+          <div class="cal-legend"><span class="dot"></span> Event day</div>
+        </div>
+
+        <!-- Upcoming list (emptied; JS will populate from JSON) -->
+        <ul class="event-list" id="event-list"></ul>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter">
+      <h2>NEWSLETTER</h2>
+      <p>Get notified when plans open and new ops go live.</p>
+      <form id="newsletter-form" class="newsletter__form" action="#" method="post" novalidate>
+        <input type="email" name="email" placeholder="your@email" required />
+        <button type="submit" class="btn btn--primary">SUBSCRIBE</button>
+      </form>
+      <p class="news-success" id="news-success" hidden>DONE — you’re on the list.</p>
+    </section>
+  </main>
+
+  <div class="modal" id="event-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__header">
+        <h3 id="modal-title" class="modal__title">Events</h3>
+        <button class="modal__close" type="button" aria-label="Close" data-close-modal>&times;</button>
+      </div>
+      <div class="modal__body" id="modal-body"></div>
+    </div>
+  </div>
+</body>
+
+</html>
